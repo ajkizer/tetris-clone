@@ -14,10 +14,23 @@
         border: solid 0.2em #fff;
         height: 90vh;
       }
+
+      .buttons {
+        font-size: 1rem;
+      }
+
+      .buttons p {
+        margin: 0;
+        padding: 0;
+      }
     </style>
   </head>
 
   <body>
+    <div class="buttons">
+      <p>Rotate with "q" and "w"</p>
+      <p>Move with arrow keys</p>
+    </div>
     <div id="score"></div>
     <canvas id="tetris" width="240" height="400" />
     <script src="tetris.js"></script>
