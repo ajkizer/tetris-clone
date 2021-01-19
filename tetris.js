@@ -201,15 +201,15 @@ function updateScore() {
 }
 
 document.addEventListener("keydown", (event) => {
-  if (event.keyCode === 37) {
+  if (event.key === "ArrowLeft") {
     playerMove(-1);
-  } else if (event.keyCode === 39) {
+  } else if (event.key === "ArrowRight") {
     playerMove(1);
-  } else if (event.keyCode === 40) {
+  } else if (event.key === "ArrowDown") {
     playerDrop();
-  } else if (event.keyCode === 81) {
+  } else if (event.key === "q") {
     playerRotate(-1);
-  } else if (event.keyCode === 87) {
+  } else if (event.key === "w") {
     playerRotate(1);
   }
 });
